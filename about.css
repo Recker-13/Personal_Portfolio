@@ -1,0 +1,164 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    background: radial-gradient(circle at center, rgb(244, 242, 242) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+/* Header and Navigation */
+header nav {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header .links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+header .links a.active, header .links a:hover {
+    color: #077bdb;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #077bdb;
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* About Section */
+.about-section {
+    padding: 3rem 1rem;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-content .image {
+    flex: 1;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.about-content .image img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-content .details {
+    flex: 2;
+    padding: 1rem;
+}
+
+.about-content .details h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about-content .details p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.about-content .details .btn {
+    display: inline-block;
+    background-color: #077bdb;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.about-content .details .btn:hover {
+    background-color: #055fa1;
+}
+
+/* Skills Section */
+.skills {
+    background-color: #f4f4f9;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skill-card {
+    background: radial-gradient(circle at center, rgba(0, 0, 255, 0.71) 0%, rgba(0, 0, 255, 0.211) 100%);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.skill-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
